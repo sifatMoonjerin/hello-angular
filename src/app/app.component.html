@@ -1,5 +1,6 @@
 <div style="text-align: center;">
-    <app-test></app-test>
+    <h2>Welcome to {{angular}}</h2>
+    <app-test (childEvent)="angular=$event" [parentData]="name"></app-test>
 </div>
 
 
