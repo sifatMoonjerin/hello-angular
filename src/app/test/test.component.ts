@@ -17,4 +17,9 @@ export class TestComponent implements OnInit {
     this.name = 'Sifat';
     console.log(event);
   }
+
+  readMe(value: string): void {
+    console.log(value);
+  }
+
 }

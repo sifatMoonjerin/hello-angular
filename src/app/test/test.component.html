@@ -2,3 +2,7 @@
 <h3 [style.color]="hasError ? 'red' : 'green'">Style Binding</h3>
 <button (click)="hasError = !hasError">Click ME</button>
 <button (click)="showMe($event)">Who am I?</button>
+<input #myInput type="text">
+<button (click)="readMe(myInput.value)">Read</button>
+
+
