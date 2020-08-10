@@ -2,20 +2,19 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
-  template: `
-    <h3> Hello {{name}}</h3>
-    <h4>{{url}}</h4>
-    <input type='text' value='hello' />
-    <input [disabled]='isDisabled' type='text' value='hello' />
-  `,
+  templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
 
   public name = 'Sifat Moonjerin';
-  public url = window.location.href;
-  public isDisabled = false;
-
+  public dangerClass = 'text-danger';
+  public hasError = true;
+  public messageClasses = {
+    'text-success': !this.hasError,
+    'text-danger': this.hasError,
+    'text-special': false
+  };
   constructor() { }
 
   ngOnInit(): void {
