@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public name = 'Sifat Moonjerin';
+  public name = '';
   public hasError = true;
-  public highlight = 'orange';
-  public styleObj = {
-    color: 'blue',
-    fontStyle: 'italic'
-  };
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  showMe(event): void {
+    this.name = 'Sifat';
+    console.log(event);
+  }
 }
