@@ -6,14 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public name = '';
+  public color = 'red';
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  isName(): boolean{
-    return this.name.length >= 3;
-  }
-
 }

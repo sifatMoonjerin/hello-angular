@@ -1,15 +1,8 @@
-<div *ngIf="isName(); then thenBlock; else elseBlock">}</div>
+<div [ngSwitch]="color">
+  <h3 *ngSwitchCase="'red'" [style.color]="'red'">I AM RED</h3>
+  <h3 *ngSwitchCase="'blue'" [style.color]="'blue'">I AM BLUE</h3>
+  <h3 *ngSwitchCase="'green'" [style.color]="'green'">I AM GREEN</h3>
+  <h3 *ngSwitchDefault>I AM BLACK</h3>
+</div>
 
-<ng-template #thenBlock>
-    <h3>
-        Hello {{name}}
-    </h3>
-</ng-template>
-
-<ng-template #elseBlock>
-    <h3>
-        Enter your name
-    </h3>
-</ng-template>
-
-<input type="text" [(ngModel)] = "name">
+<input type="text" [(ngModel)]="color" />
