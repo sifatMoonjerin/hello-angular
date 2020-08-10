@@ -12,4 +12,8 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  isName(): boolean{
+    return this.name.length >= 3;
+  }
+
 }

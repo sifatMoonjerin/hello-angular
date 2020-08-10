@@ -1,4 +1,15 @@
-<h3>Hello {{ name }}</h3>
+<div *ngIf="isName(); then thenBlock; else elseBlock">}</div>
 
+<ng-template #thenBlock>
+    <h3>
+        Hello {{name}}
+    </h3>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h3>
+        Enter your name
+    </h3>
+</ng-template>
 
 <input type="text" [(ngModel)] = "name">
