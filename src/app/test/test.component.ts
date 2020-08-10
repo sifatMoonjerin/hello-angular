@@ -7,19 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   public name = '';
-  public hasError = true;
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  showMe(event): void {
-    this.name = 'Sifat';
-    console.log(event);
-  }
-
-  readMe(value: string): void {
-    console.log(value);
-  }
 
 }
