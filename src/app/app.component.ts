@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public name = 'Sifat';
   public angular = '';
+  public randomInfo = 'Some random info';
+  public randomNum = 0;
 }

@@ -1,6 +1,8 @@
 <div style="text-align: center;">
     <h2>Welcome to {{angular}}</h2>
     <app-test (childEvent)="angular=$event" [parentData]="name"></app-test>
+    <app-random (childEvent)="randomNum=$event" [parentData]="randomInfo"></app-random>
+    <h3>{{randomNum}}</h3>
 </div>
 
 
