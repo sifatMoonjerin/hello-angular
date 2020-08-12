@@ -4,13 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
-import { RandomComponent } from './random/random.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    RandomComponent
+    TestComponent
   ],
   imports: [
     BrowserModule,

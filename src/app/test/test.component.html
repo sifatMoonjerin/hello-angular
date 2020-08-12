@@ -1,3 +1,7 @@
-<h2>Hello {{parentData}}</h2>
+<h3>{{ name }}</h3>
+<h3>{{ name | lowercase }}</h3>
+<h3>{{ name | uppercase }}</h3>
+<h3>{{ name | titlecase }}</h3>
+<h3>{{ name | slice:3:5 }}</h3>
 
-<button (click)="fireEvent()">Fire Event</button>
+<h3>{{ 0.25 | currency: "EUR" }}</h3>

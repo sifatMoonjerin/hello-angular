@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public name = 'Sifat';
-  public angular = '';
-  public randomInfo = 'Some random info';
-  public randomNum = 0;
+
 }
